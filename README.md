@@ -17,7 +17,7 @@ When we're presented with this type of data, one important goal is to uncover th
 
 Let's imagine what we could do if we had a lot more data.  In fact, let's assume we had $N$ samples of $Y$ for every value of $X$ that we cared about.  How well can we then estimate $f(x)$?  For a given $x_0$, let's take the average of all of the associated $y$ values, and call the result $\hat{y}$.
 
-If we repeated this process a bunch of times, the mean value $\hat{y}$ will be $f(x_0)$, with variance equal to $\sigma^2/N$, which is small if $N$ is large.  That is, if we have enough data, we can just take a mean of all of the $y$ values for a given $x$, and this should yield a value very close to $f(x)$.
+If we repeated this process a bunch of times, the mean value $\hat{y}$ will be $f(x_0)$, with variance equal to $\sigma^2/(N-1)$, which is small if $N$ is large.  That is, if we have enough data, we can just take a mean of all of the $y$ values for a given $x$, and this should yield a value very close to $f(x)$.
 
 Unfortunately, we rarely have *enough* data, let alone *enough data for each value of $x$*, so we'll need to figure out another way to try and zero out that $\epsilon$ term.
 
